@@ -66,8 +66,8 @@ def naive_search(l, target):
         l (list): list of values
         target (str): searched value
     """
-    for i in range(len(l)):
-        if l[i] == target:
+    for i, value in enumerate(l):
+        if value == target:
             return i
     return -1
 
